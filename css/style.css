@@ -1,0 +1,91 @@
+/* Manara Custom Styles */
+
+/* Fonts */
+.font-cairo {
+    font-family: 'Cairo', sans-serif;
+}
+
+.font-amiri {
+    font-family: 'Amiri', serif;
+}
+
+.font-tajawal {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.font-reem {
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.font-scheherazade {
+    font-family: 'Scheherazade New', serif;
+}
+
+/* Hero Pattern */
+.hero-pattern {
+    background-image: radial-gradient(currentColor 1px, transparent 1px);
+    background-size: 24px 24px;
+    color: rgba(120, 53, 15, 0.1); /* Default Amber-900 with low opacity */
+}
+
+.dark .hero-pattern {
+    color: rgba(255, 255, 255, 0.05); /* White with low opacity for dark mode */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6d3d1; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a29e; 
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #44403c; /* stone-700 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #57534e; /* stone-600 */
+}
+
+/* Poetry Formatting */
+.poetry-text {
+    white-space: pre-line;
+    text-align: center;
+    line-height: 2.2;
+}
+
+/* Hide scrollbar for tag list but allow scroll */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Utility */
+[v-cloak] {
+    display: none;
+}
